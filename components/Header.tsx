@@ -24,7 +24,7 @@ export default function Header() {
             &lt;/&gt;
           </span>
           <span className="font-[family-name:var(--font-suisse)] text-[20px] font-[400] text-[#dedede]">
-            DevForge
+            Xoralife
           </span>
         </Link>
 

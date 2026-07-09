@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="max-w-xs">
             <Link href="/" className="flex items-center gap-1">
               <span className="font-[family-name:var(--font-suisse)] text-[20px] font-[400] text-[#dedede]">
-                &lt;/&gt; DevForge
+                &lt;/&gt; Xoralife
               </span>
             </Link>
             <p className="mt-4 font-[family-name:var(--font-suisse)] text-[14px] font-[400] leading-[1.38] text-[#a3a4a5]">
@@ -66,7 +66,7 @@ export default function Footer() {
 
         <div className="mt-16 border-t border-[#303235] pt-8 text-center">
           <p className="font-[family-name:var(--font-mono)] text-[11px] font-[400] uppercase tracking-[0.058em] text-[#5d5e61]">
-            &copy; {new Date().getFullYear()} DevForge. All rights reserved.
+            &copy; {new Date().getFullYear()} Xoralife. All rights reserved.
           </p>
         </div>
       </div>
