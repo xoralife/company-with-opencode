@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -19,8 +20,11 @@ export default function Header() {
   return (
     <header className="border-b border-[#303235]">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
-        <Link href="/" className="font-[family-name:var(--font-suisse)] text-[20px] font-[400] text-[#dedede] tracking-[-0.3px]">
-          Xoralife
+        <Link href="/" className="flex items-center gap-2">
+          <Image src="/logo.png" alt="Xoralife" width={24} height={24} className="rounded-[1px]" />
+          <span className="font-[family-name:var(--font-suisse)] text-[20px] font-[400] text-[#dedede] tracking-[-0.3px]">
+            Xoralife
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">

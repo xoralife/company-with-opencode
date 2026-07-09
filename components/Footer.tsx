@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const footerColumns = [
@@ -35,9 +36,10 @@ export default function Footer() {
       <div className="mx-auto max-w-[1200px] px-6 py-16">
         <div className="flex flex-wrap justify-between gap-12">
           <div className="max-w-xs">
-            <Link href="/" className="flex items-center gap-1">
+            <Link href="/" className="flex items-center gap-2">
+              <Image src="/logo.png" alt="Xoralife" width={24} height={24} className="rounded-[1px]" />
               <span className="font-[family-name:var(--font-suisse)] text-[20px] font-[400] text-[#dedede]">
-                &lt;/&gt; Xoralife
+                Xoralife
               </span>
             </Link>
             <p className="mt-4 font-[family-name:var(--font-suisse)] text-[14px] font-[400] leading-[1.38] text-[#a3a4a5]">

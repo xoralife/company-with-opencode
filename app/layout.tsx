@@ -17,8 +17,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Software House — Premium Development Services",
+  title: "Xoralife — Premium Development Services",
   description: "We build websites, apps, and digital solutions for your business.",
+  icons: { icon: "/logo.png" },
 };
 
 export default function RootLayout({
