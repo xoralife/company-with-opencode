@@ -47,22 +47,22 @@ export default function AboutPage() {
             {team.map((member) => (
               <div
                 key={member.name}
-                className="rounded-[1px] border border-[#303235] p-5 text-center"
+                className="rounded-[1px] border border-[#303235] p-8 text-center"
                 style={{ backgroundColor: "#181a1d" }}
               >
-                <div className="mx-auto h-20 w-20 overflow-hidden rounded-[1px] border border-[#303235] bg-[#1f2124]">
+                <div className="mx-auto h-[140px] w-[140px] overflow-hidden rounded-[1px] border border-[#303235] bg-[#1f2124]">
                   <Image
                     src={member.photo}
                     alt={member.name}
-                    width={80}
-                    height={80}
+                    width={140}
+                    height={140}
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <h3 className="mt-4 font-[family-name:var(--font-suisse)] text-[18px] font-[400] text-[#dedede]">
+                <h3 className="mt-5 font-[family-name:var(--font-suisse)] text-[22px] font-[400] text-[#dedede]">
                   {member.name}
                 </h3>
-                <p className="mt-1 font-[family-name:var(--font-mono)] text-[11px] font-[400] uppercase tracking-[0.058em] text-[#818284]">
+                <p className="mt-2 font-[family-name:var(--font-mono)] text-[12px] font-[400] uppercase tracking-[0.053em] text-[#818284]">
                   {member.role}
                 </p>
               </div>
