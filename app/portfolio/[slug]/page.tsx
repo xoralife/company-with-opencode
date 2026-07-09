@@ -4,8 +4,9 @@ import StatusBadge from "@/components/StatusBadge";
 import TerminalPanel from "@/components/TerminalPanel";
 import portfolio from "@/data/portfolio.json";
 
-export default function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
-  const project = portfolio.find((p) => p.slug === params.slug);
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = portfolio.find((p) => p.slug === slug);
   if (!project) notFound();
 
   return (

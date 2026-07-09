@@ -57,7 +57,7 @@ export default async function ReviewsPage() {
             </div>
           ) : (
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              {reviews.map((review: { id: string }) => (
+              {reviews.map((review: { id: string; name: string; rating: number; message: string; date: string }) => (
                 <ReviewCard key={review.id} review={review} />
               ))}
             </div>
