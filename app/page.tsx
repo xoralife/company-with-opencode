@@ -4,6 +4,8 @@ import TerminalPanel from "@/components/TerminalPanel";
 import ServiceCard from "@/components/ServiceCard";
 import CustomerLogoStrip from "@/components/CustomerLogoStrip";
 import services from "@/data/services.json";
+import hero from "@/data/hero.json";
+import cta from "@/data/cta.json";
 
 export default function Home() {
   return (
@@ -15,15 +17,12 @@ export default function Home() {
               <TerminalPanel />
             </div>
             <div className="md:w-7/12">
-              <StatusBadge label="INITIALIZED" />
-              <h1 className="mt-6 font-[family-name:var(--font-suisse)] text-[36px] font-[400] leading-[1.17] text-[#dedede] md:text-[65px] md:leading-[1.1] md:tracking-[-0.33px]">
-                We build software
-                <br />
-                that powers business.
+              <StatusBadge label={hero.badge} />
+              <h1 className="mt-6 font-[family-name:var(--font-suisse)] text-[36px] font-[400] leading-[1.17] text-[#dedede] whitespace-pre-line md:text-[65px] md:leading-[1.1] md:tracking-[-0.33px]">
+                {hero.headline}
               </h1>
               <p className="mt-4 max-w-lg font-[family-name:var(--font-suisse)] text-[18px] font-[400] leading-[1.33] text-[#818284]">
-                From web apps to mobile experiences, DevForge crafts digital
-                solutions that drive real results for your business.
+                {hero.subtitle}
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
@@ -76,19 +75,18 @@ export default function Home() {
 
       <section style={{ backgroundColor: "#0b0e12" }}>
         <div className="mx-auto max-w-[1200px] px-6 py-20 text-center">
-          <StatusBadge label="READY TO BUILD" variant="active" />
+          <StatusBadge label={cta.badge} variant="active" />
           <h2 className="mt-4 font-[family-name:var(--font-suisse)] text-[36px] font-[400] leading-[1.17] text-[#dedede]">
-            Let&apos;s create something great together
+            {cta.headline}
           </h2>
           <p className="mx-auto mt-4 max-w-lg font-[family-name:var(--font-suisse)] text-[14px] font-[400] leading-[1.38] text-[#818284]">
-            Have a project in mind? We&apos;d love to hear about it. Drop us a
-            message and let&apos;s build the future.
+            {cta.subtitle}
           </p>
           <Link
             href="/contact"
             className="mt-8 inline-block rounded-[1px] bg-[#002923] px-6 py-3 font-[family-name:var(--font-mono)] text-[12px] font-[400] uppercase tracking-[0.053em] text-[#00d892] transition-colors hover:bg-[#005441]"
           >
-            START A PROJECT
+            {cta.buttonText}
           </Link>
         </div>
       </section>

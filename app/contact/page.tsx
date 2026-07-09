@@ -1,6 +1,6 @@
 import StatusBadge from "@/components/StatusBadge";
 import ContactForm from "@/components/ContactForm";
-import TerminalPanel from "@/components/TerminalPanel";
+import contact from "@/data/contact.json";
 
 export default function ContactPage() {
   return (
@@ -29,11 +29,7 @@ export default function ContactPage() {
       <section>
         <div className="mx-auto max-w-[1200px] px-6 py-20">
           <div className="grid gap-8 md:grid-cols-3">
-            {[
-              { title: "EMAIL", value: "hello@devforge.com" },
-              { title: "PHONE", value: "+1 (555) 123-4567" },
-              { title: "LOCATION", value: "San Francisco, CA" },
-            ].map((item) => (
+            {contact.map((item) => (
               <div
                 key={item.title}
                 className="rounded-[1px] border border-[#303235] p-5 text-center"

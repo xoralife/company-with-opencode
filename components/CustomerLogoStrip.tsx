@@ -1,4 +1,4 @@
-const logos = ["ACME Corp", "TechFlow", "DataPulse", "CloudNine", "NexGen", "ByteWave"];
+import customers from "@/data/customers.json";
 
 export default function CustomerLogoStrip() {
   return (
@@ -7,7 +7,7 @@ export default function CustomerLogoStrip() {
         POWERING THE BEST TEAMS
       </p>
       <div className="mt-5 flex flex-wrap items-center justify-center gap-12">
-        {logos.map((name) => (
+        {customers.map((name) => (
           <span
             key={name}
             className="font-[family-name:var(--font-mono)] text-[13px] font-[400] uppercase tracking-[0.053em] text-[#5d5e61]"

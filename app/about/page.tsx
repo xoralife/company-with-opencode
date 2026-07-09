@@ -1,12 +1,7 @@
 import StatusBadge from "@/components/StatusBadge";
 import Link from "next/link";
-
-const team = [
-  { name: "Alex Chen", role: "Founder & Lead Developer" },
-  { name: "Sarah Khan", role: "Frontend Architect" },
-  { name: "Ravi Patel", role: "Backend Engineer" },
-  { name: "Emily Rodriguez", role: "UI/UX Designer" },
-];
+import team from "@/data/team.json";
+import aboutData from "@/data/about.json";
 
 export default function AboutPage() {
   return (
@@ -15,11 +10,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1200px] px-6 py-20 md:py-32">
           <StatusBadge label="ABOUT" variant="neutral" />
           <h1 className="mt-4 max-w-[700px] font-[family-name:var(--font-suisse)] text-[36px] font-[400] leading-[1.17] text-[#dedede] md:text-[65px] md:leading-[1.1] md:tracking-[-0.33px]">
-            We are DevForge
+            {aboutData.headline}
           </h1>
           <p className="mt-4 max-w-lg font-[family-name:var(--font-suisse)] text-[18px] font-[400] leading-[1.33] text-[#818284]">
-            A team of passionate developers, designers, and strategists
-            dedicated to building world-class digital products.
+            {aboutData.subtitle}
           </p>
         </div>
       </section>
@@ -29,27 +23,14 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl">
             <StatusBadge label="OUR STORY" variant="neutral" />
             <h2 className="mt-4 font-[family-name:var(--font-suisse)] text-[36px] font-[400] leading-[1.17] text-[#dedede]">
-              Built by developers, for businesses
+              {aboutData.storyHeadline}
             </h2>
             <div className="mt-8 space-y-4">
-              <p className="font-[family-name:var(--font-suisse)] text-[14px] font-[400] leading-[1.38] text-[#a3a4a5]">
-                DevForge started in 2022 with a simple mission: make high-quality
-                software development accessible to businesses of all sizes. We
-                believed that great technology shouldn&apos;t require a massive
-                budget or a team of fifty engineers.
-              </p>
-              <p className="font-[family-name:var(--font-suisse)] text-[14px] font-[400] leading-[1.38] text-[#a3a4a5]">
-                Today, we&apos;ve helped over 50 companies launch digital
-                products — from early-stage startups to established enterprises.
-                Our approach combines technical excellence with practical
-                business thinking, ensuring every line of code serves a real
-                purpose.
-              </p>
-              <p className="font-[family-name:var(--font-suisse)] text-[14px] font-[400] leading-[1.38] text-[#a3a4a5]">
-                We specialize in Next.js, React, Node.js, and cloud
-                infrastructure, but our real expertise is in understanding your
-                business and translating it into software that works.
-              </p>
+              {aboutData.storyParagraphs.map((para, i) => (
+                <p key={i} className="font-[family-name:var(--font-suisse)] text-[14px] font-[400] leading-[1.38] text-[#a3a4a5]">
+                  {para}
+                </p>
+              ))}
             </div>
           </div>
         </div>

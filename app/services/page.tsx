@@ -2,6 +2,7 @@ import StatusBadge from "@/components/StatusBadge";
 import ServiceCard from "@/components/ServiceCard";
 import TerminalPanel from "@/components/TerminalPanel";
 import services from "@/data/services.json";
+import process from "@/data/process.json";
 
 export default function ServicesPage() {
   return (
@@ -37,12 +38,7 @@ export default function ServicesPage() {
               Our process
             </h2>
             <div className="mt-12 grid gap-6">
-              {[
-                { step: "01", title: "Discovery", desc: "We learn about your business, goals, and users to define the scope." },
-                { step: "02", title: "Design", desc: "Wireframes, prototypes, and design systems that align with your brand." },
-                { step: "03", title: "Develop", desc: "Agile development with regular demos and transparent communication." },
-                { step: "04", title: "Deploy", desc: "Production deployment with monitoring, CI/CD, and ongoing support." },
-              ].map((p) => (
+              {process.map((p) => (
                 <div key={p.step} className="flex gap-6">
                   <span className="font-[family-name:var(--font-mono)] text-[20px] font-[400] leading-[1.3] tracking-[0.014em] text-[#00d892]">
                     {p.step}

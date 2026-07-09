@@ -1,0 +1,6 @@
+[
+  { "step": "01", "title": "Discovery", "desc": "We learn about your business, goals, and users to define the scope." },
+  { "step": "02", "title": "Design", "desc": "Wireframes, prototypes, and design systems that align with your brand." },
+  { "step": "03", "title": "Develop", "desc": "Agile development with regular demos and transparent communication." },
+  { "step": "04", "title": "Deploy", "desc": "Production deployment with monitoring, CI/CD, and ongoing support." }
+]
