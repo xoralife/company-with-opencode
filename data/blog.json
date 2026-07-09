@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "why-nextjs-in-2025",
+    "title": "Why Next.js Is the Best Choice for Your Next Project in 2025",
+    "excerpt": "Next.js continues to dominate the React ecosystem with server components, streaming, and improved performance.",
+    "content": "Next.js has evolved significantly over the past few years. With the introduction of the App Router, server components, and streaming, it has become the go-to framework for building modern web applications.\n\nIn 2025, Next.js offers unparalleled developer experience with features like automatic code splitting, optimized images, and built-in CSS support. The new React Server Components allow you to render components on the server, reducing the client-side JavaScript bundle and improving performance.\n\nWhether you're building a marketing site, an e-commerce platform, or a full-fledged SaaS application, Next.js provides the tools you need to ship faster and perform better.",
+    "date": "2025-12-15",
+    "tag": "TECH"
+  },
+  {
+    "slug": "ui-design-trends",
+    "title": "UI Design Trends That Define Modern Web Experiences",
+    "excerpt": "Dark mode, micro-interactions, and minimalism continue to shape how users interact with digital products.",
+    "content": "User interface design is constantly evolving. In 2025, we're seeing a strong shift toward dark mode interfaces, subtle micro-interactions, and content-focused minimalism.\n\nDark mode has moved from being a nice-to-have to an expected feature. It reduces eye strain, saves battery on OLED devices, and gives products a modern, premium feel. The key is to use dark surfaces with carefully rationed accent colors rather than true blacks.\n\nMicro-interactions — small animations that respond to user actions — make interfaces feel alive and responsive. A button that subtly lifts on hover, a form that shakes on validation error, or a loading state that entertains — these details create memorable experiences.\n\nMinimalism isn't about removing everything; it's about removing everything that doesn't serve a purpose. Clean layouts with generous whitespace, clear typography hierarchy, and intentional color use create interfaces that are both beautiful and functional.",
+    "date": "2025-11-28",
+    "tag": "DESIGN"
+  },
+  {
+    "slug": "scaling-nodejs-apps",
+    "title": "Scaling Node.js Applications for Production",
+    "excerpt": "Best practices for building Node.js applications that can handle millions of requests without breaking a sweat.",
+    "content": "Node.js is known for its event-driven, non-blocking architecture, making it ideal for building scalable applications. However, scaling Node.js requires careful planning and the right tools.\n\nFirst, use a process manager like PM2 to run your application in cluster mode, utilizing all available CPU cores. This allows you to handle multiple requests simultaneously.\n\nSecond, implement proper caching strategies. Use Redis or Memcached to cache frequently accessed data, reducing the load on your database and improving response times.\n\nThird, design your application for horizontal scaling. Use a load balancer to distribute traffic across multiple instances, and ensure your application is stateless so any instance can handle any request.\n\nFinally, monitor your application with tools like New Relic or Datadog. Track response times, error rates, and resource usage to identify bottlenecks before they become problems.",
+    "date": "2025-10-10",
+    "tag": "ENGINEERING"
+  },
+  {
+    "slug": "tailwind-css-tips",
+    "title": "Tailwind CSS Tips for Faster Development",
+    "excerpt": "Utility-first CSS doesn't have to mean messy templates. Here are tips to keep your Tailwind code clean and maintainable.",
+    "content": "Tailwind CSS has revolutionized how developers style their applications. Its utility-first approach allows for rapid prototyping and consistent design systems. But without discipline, templates can become hard to read.\n\nFirst, use the @apply directive in your CSS files to extract common utility patterns into custom classes. This keeps your HTML clean while still leveraging Tailwind's design system.\n\nSecond, take advantage of the configuration file to define your design tokens. Colors, fonts, spacing, and breakpoints should all be defined in tailwind.config.js, not scattered across your components.\n\nThird, group related utilities together. When a component has multiple states (default, hover, focus, active), group them logically to make your code more readable.\n\nFourth, use the class-variance-authority library or clsx for conditional classes. These tools make it easy to apply different styles based on component state without cluttering your templates.",
+    "date": "2025-09-05",
+    "tag": "FRONTEND"
+  },
+  {
+    "slug": "api-design-best-practices",
+    "title": "API Design Best Practices for Developers",
+    "excerpt": "Design APIs that are intuitive, consistent, and a joy to work with for other developers.",
+    "content": "A well-designed API is a pleasure to use. It follows consistent patterns, provides clear error messages, and handles edge cases gracefully. Here are some best practices.\n\nUse consistent naming conventions. RESTful APIs should use nouns for resources and HTTP methods for actions. Use plural nouns for collections (/users, /orders) and nested routes for related resources.\n\nVersion your APIs from day one. Even if you don't have external consumers, versioning gives you the flexibility to make breaking changes without disrupting existing clients. Use URL-based versioning (/v1/, /v2/) or header-based versioning.\n\nProvide meaningful error responses. Include a machine-readable error code, a human-readable message, and any relevant details. Use standard HTTP status codes consistently — 400 for bad requests, 401 for unauthorized, 404 for not found, and 500 for server errors.\n\nAlways paginate list endpoints. Even if your dataset is small now, it will grow. Use cursor-based pagination for better performance with large datasets.",
+    "date": "2025-08-20",
+    "tag": "ENGINEERING"
+  }
+]

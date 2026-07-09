@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "ecommerce-platform",
+    "title": "E-Commerce Platform",
+    "category": "Web Development",
+    "description": "A full-featured online marketplace with real-time inventory, payment processing, and admin dashboard.",
+    "tech": ["Next.js", "Stripe", "PostgreSQL", "Redis"]
+  },
+  {
+    "slug": "fitness-tracker-app",
+    "title": "Fitness Tracker App",
+    "category": "Mobile App",
+    "description": "Cross-platform fitness tracking app with workout logging, progress charts, and social features.",
+    "tech": ["React Native", "Firebase", "Node.js"]
+  },
+  {
+    "slug": "saas-dashboard",
+    "title": "SaaS Analytics Dashboard",
+    "category": "Web Development",
+    "description": "Real-time analytics dashboard with interactive charts, user management, and role-based access control.",
+    "tech": ["React", "D3.js", "GraphQL", "MongoDB"]
+  },
+  {
+    "slug": "restaurant-pos",
+    "title": "Restaurant POS System",
+    "category": "Backend & APIs",
+    "description": "Cloud-based point of sale system with order management, billing, and kitchen display integration.",
+    "tech": ["Node.js", "Socket.io", "React", "MySQL"]
+  },
+  {
+    "slug": "brand-redesign",
+    "title": "Brand Redesign",
+    "category": "UI/UX Design",
+    "description": "Complete brand identity redesign including logo, design system, and responsive website.",
+    "tech": ["Figma", "Tailwind CSS", "Next.js"]
+  },
+  {
+    "slug": "healthcare-portal",
+    "title": "Healthcare Portal",
+    "category": "Web Development",
+    "description": "Patient portal with appointment scheduling, telemedicine integration, and medical record access.",
+    "tech": ["Next.js", "WebRTC", "PostgreSQL", "AWS"]
+  }
+]

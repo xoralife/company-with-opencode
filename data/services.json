@@ -1,0 +1,38 @@
+[
+  {
+    "id": "web-dev",
+    "icon": "\u2699\ufe0f",
+    "title": "Web Development",
+    "description": "Custom websites and web applications built with modern frameworks like Next.js, React, and Node.js. Responsive, fast, and SEO-optimized."
+  },
+  {
+    "id": "mobile",
+    "icon": "\u2601\ufe0f",
+    "title": "Mobile Apps",
+    "description": "Cross-platform mobile applications for iOS and Android using React Native and Flutter. Native performance with a single codebase."
+  },
+  {
+    "id": "ui-ux",
+    "icon": "\u2728",
+    "title": "UI/UX Design",
+    "description": "User-centered design from wireframes to polished prototypes. Clean, intuitive interfaces that delight your users."
+  },
+  {
+    "id": "backend",
+    "icon": "\ud83d\udee1\ufe0f",
+    "title": "Backend & APIs",
+    "description": "Scalable server architecture, RESTful & GraphQL APIs, database design, and cloud infrastructure on AWS, GCP, or Azure."
+  },
+  {
+    "id": "ecommerce",
+    "icon": "\ud83d\udecd\ufe0f",
+    "title": "E-Commerce",
+    "description": "Full-featured online stores with secure payments, inventory management, and seamless checkout experiences."
+  },
+  {
+    "id": "consulting",
+    "icon": "\ud83d\udca1",
+    "title": "Tech Consulting",
+    "description": "Technical architecture review, code audits, team augmentation, and digital transformation strategy."
+  }
+]
