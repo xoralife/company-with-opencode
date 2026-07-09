@@ -1,3 +1,4 @@
+import Image from "next/image";
 import StatusBadge from "@/components/StatusBadge";
 import Link from "next/link";
 import team from "@/data/team.json";
@@ -49,10 +50,14 @@ export default function AboutPage() {
                 className="rounded-[1px] border border-[#303235] p-5 text-center"
                 style={{ backgroundColor: "#181a1d" }}
               >
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-[1px] border border-[#303235] bg-[#1f2124]">
-                  <span className="font-[family-name:var(--font-mono)] text-[20px] text-[#00d892]">
-                    {member.name.charAt(0)}
-                  </span>
+                <div className="mx-auto h-20 w-20 overflow-hidden rounded-[1px] border border-[#303235] bg-[#1f2124]">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={80}
+                    height={80}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
                 <h3 className="mt-4 font-[family-name:var(--font-suisse)] text-[18px] font-[400] text-[#dedede]">
                   {member.name}
