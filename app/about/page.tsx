@@ -50,12 +50,12 @@ export default function AboutPage() {
                 className="rounded-[1px] border border-[#303235] p-8 text-center"
                 style={{ backgroundColor: "#181a1d" }}
               >
-                <div className="mx-auto h-[140px] w-[140px] overflow-hidden rounded-[1px] border border-[#303235] bg-[#1f2124]">
+                <div className="mx-auto h-[70px] w-[70px] overflow-hidden rounded-full border border-[#303235] bg-[#1f2124]">
                   <Image
                     src={member.photo}
                     alt={member.name}
-                    width={140}
-                    height={140}
+                    width={70}
+                    height={70}
                     className="h-full w-full object-cover"
                   />
                 </div>
