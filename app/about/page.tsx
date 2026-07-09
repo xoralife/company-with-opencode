@@ -1,6 +1,6 @@
-import Image from "next/image";
 import StatusBadge from "@/components/StatusBadge";
 import Link from "next/link";
+import TeamCard from "@/components/TeamCard";
 import team from "@/data/team.json";
 import aboutData from "@/data/about.json";
 
@@ -45,27 +45,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((member) => (
-              <div
-                key={member.name}
-                className="rounded-[1px] border border-[#303235] p-8 text-center"
-                style={{ backgroundColor: "#181a1d" }}
-              >
-                <div className="mx-auto h-[80px] w-[80px] overflow-hidden rounded-full border border-[#303235] bg-[#1f2124]">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    width={80}
-                    height={80}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <h3 className="mt-5 font-[family-name:var(--font-suisse)] text-[22px] font-[400] text-[#dedede]">
-                  {member.name}
-                </h3>
-                <p className="mt-2 font-[family-name:var(--font-mono)] text-[12px] font-[400] uppercase tracking-[0.053em] text-[#818284]">
-                  {member.role}
-                </p>
-              </div>
+              <TeamCard key={member.name} {...member} />
             ))}
           </div>
         </div>
