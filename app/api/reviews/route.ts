@@ -47,3 +47,21 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 }
+
+export async function DELETE(request: Request) {
+  try {
+    const { id } = await request.json();
+    if (!id) {
+      return NextResponse.json({ error: "ID is required" }, { status: 400 });
+    }
+    const reviews = await readReviews();
+    const filtered = reviews.filter((r: { id: string }) => r.id !== id);
+    if (filtered.length === reviews.length) {
+      return NextResponse.json({ error: "Review not found" }, { status: 404 });
+    }
+    await writeReviews(filtered);
+    return NextResponse.json({ success: true });
+  } catch {
+    return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+  }
+}
