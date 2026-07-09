@@ -19,13 +19,8 @@ export default function Header() {
   return (
     <header className="border-b border-[#303235]">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-1">
-          <span className="font-[family-name:var(--font-suisse)] text-[20px] font-[400] text-[#dedede] tracking-[-0.3px]">
-            &lt;/&gt;
-          </span>
-          <span className="font-[family-name:var(--font-suisse)] text-[20px] font-[400] text-[#dedede]">
-            Xoralife
-          </span>
+        <Link href="/" className="font-[family-name:var(--font-suisse)] text-[20px] font-[400] text-[#dedede] tracking-[-0.3px]">
+          Xoralife
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
