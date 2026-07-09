@@ -1,6 +1,4 @@
 [
-  { "name": "Alex Chen", "role": "Founder & Lead Developer", "photo": "/team/alex.jpg" },
   { "name": "Sarah Khan", "role": "Frontend Architect", "photo": "/team/alex.jpg" },
-  { "name": "Ravi Patel", "role": "Backend Engineer", "photo": "/team/alex.jpg" },
-  { "name": "Emily Rodriguez", "role": "UI/UX Designer", "photo": "/team/alex.jpg" }
+  { "name": "qasim ", "role": "UI/UX Designer", "photo": "" }
 ]
