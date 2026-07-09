@@ -29,18 +29,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </div>
 
         <div className="mt-12">
-          <TerminalPanel>
-            <span className="text-[#00d892]">$</span>{" "}
-            <span className="text-[#c58aff]">cd</span>{" "}
-            <span className="text-[#ff6285]">/projects/{project.slug}</span>
-            <br />
-            <span className="text-[#00d892]">$</span>{" "}
-            <span className="text-[#c58aff]">npm</span>{" "}
-            <span className="text-[#ff6285]">run</span>{" "}
-            <span className="text-[#bababb]">build</span>
-            <br />
-            <span className="text-[#006d4a]">// Build completed successfully</span>
-          </TerminalPanel>
+          <TerminalPanel />
         </div>
 
         <div className="mt-12">
