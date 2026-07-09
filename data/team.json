@@ -1,4 +1,9 @@
 [
+    { "name": "Abid Hussain ", "role": "CEO", "photo": "/team/abid.jpg" },
+  { "name": "Ali Raza", "role": "CTO", "photo": "/team/un.jpeg" },
+  { "name": "Ahsan Raza", "role": "Full Stack Developer", "photo": "/team/un.jpeg" },
+  { "name": "Adeel Raza", "role": "Backend Developer", "photo": "/team/un.jpeg" },
+  { "name": "Aqib Raza", "role": "Frontend Developer", "photo": "/team/un.jpeg" },
   { "name": "Sarah Khan", "role": "Frontend Architect", "photo": "/team/alex.jpg" },
-  { "name": "qasim ", "role": "UI/UX Designer", "photo": "" }
+  { "name": "qasim ", "role": "UI/UX Designer", "photo": "/team/un.jpeg" }
 ]
